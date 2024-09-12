@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagamento</title>
+        <link rel="stylesheet" href="pagamento.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Escolha a Forma de Pagamento</h1>
+            <form id="pagamentoForm">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <div class="select-container">
+                    <select id="pagamento" name="pagamento" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="pix">PIX <i class="fas fa-qrcode"></i></option>
+                        <option value="credito">Cartão de Crédito <i class="fas fa-credit-card"></i></option>
+                        <option value="debito">Cartão de Débito <i class="fas fa-credit-card"></i></option>
+                        <option value="dinheiro">Dinheiro <i class="fas fa-money-bill-wave"></i></option>
+                    </select>
+                    <i id="paymentIcon" class="fas fa-money-check"></i>
+                </div>
+
+                <div id="trocoSection" class="hidden">
+                    <label for="precisaTroco">Precisa de troco?</label>
+                    <select id="precisaTroco" name="precisaTroco">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+
+                    <div id="trocoValorSection" class="hidden">
+                        <label for="trocoValor">Troco para quanto?</label>
+                        <input type="number" id="trocoValor" name="trocoValor" placeholder="Insira o valor">
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <script src="pagamento.js"></script>
+    </body>
+    </html>
