@@ -75,7 +75,7 @@ i {
     flex-direction: column; /* Altera para coluna no mobile */
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa a altura inteira da tela no mobile */
+    height: 50vh; /* Ocupa a altura inteira da tela no mobile */
   }
 
   .header-icons {
