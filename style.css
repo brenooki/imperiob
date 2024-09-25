@@ -6,22 +6,38 @@
 }
 
 header {
-  width: 100%;
-}
-
-.header-content {
   display: flex;
+  justify-content: space-between; /* Alinha os ícones à esquerda e a imagem no centro */
   align-items: center;
-  justify-content: space-between;
-}
-
-i {
-  color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .header-icons {
   display: flex;
-  gap: 14px;
+  gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.header-icons img {
+  width: 24px; /* Ajuste o tamanho dos ícones */
+  height: auto;
+}
+
+.header-logo {
+  flex-grow: 1; /* Faz a logo ocupar o espaço necessário para centralizar */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem no espaço disponível */
+  align-items: center;
+}
+
+header img {
+  max-width: 100%; /* Deixa a logo responsiva */
+  width: 400px;
+}
+
+i {
+  color: #fff;
 }
 
 .header-icons a:hover i {
@@ -51,12 +67,8 @@ i {
   background-color: palevioletred;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -60px;
-}
+
+
 
 @media screen and (max-width: 768px) {
   .header-content {
@@ -70,7 +82,7 @@ i {
     font-size: 34px;
   }
   .header-logo img {
-    width: 160px;
+    width: 180px;
     margin-top: 46px;
   }
 }
@@ -370,24 +382,8 @@ a {
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  
 }
 
-.logo_perfil{
-  background-color: rgb(85, 47, 223);
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-
-}
-
-.logo_perfil:hover{
-  background-color: rgba(212, 210, 221, 0.426);
-  transition: background-color 0.3s ease;
-}
 
 .services-content {
   margin: 30px;
@@ -395,6 +391,7 @@ a {
   margin-bottom: 10px;
   padding: 40px;
 }
+
 
 
 .form-dropdown {
