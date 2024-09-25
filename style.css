@@ -80,7 +80,7 @@ i {
 
   .header-icons {
     justify-content: center;
-    margin-bottom: 20px; /* Espaço entre ícones e logo */
+    margin-bottom: 10px; /* Espaço entre ícones e logo */
   }
 
   .header-logo {
