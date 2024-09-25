@@ -81,6 +81,7 @@ i {
   .header-icons {
     justify-content: center;
     margin-bottom: 5px; /* Espaço entre ícones e logo */
+    margin-top: 150px;
   }
 
   .header-logo {
