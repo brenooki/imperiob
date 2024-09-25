@@ -177,7 +177,7 @@ i {
   }
 }
 .about {
-  background-color: #ff1493;
+  background-image: linear-gradient(to bottom, #ff1493, rgb(6, 18, 30));
   overflow: hidden;
   color: white;
 }
