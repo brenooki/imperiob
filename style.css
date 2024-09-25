@@ -71,21 +71,23 @@ i {
 
 
 @media screen and (max-width: 768px) {
-  .header-content {
-    width: 100%;
-    flex-direction: column;
+  header {
+    flex-direction: column; /* Altera para coluna no mobile */
+    justify-content: center;
     align-items: center;
+    height: 100vh; /* Ocupa a altura inteira da tela no mobile */
+  }
+
+  .header-icons {
+    justify-content: center;
+    margin-bottom: 20px; /* Espaço entre ícones e logo */
+  }
+
+  .header-logo {
     justify-content: center;
   }
-  .header-content i {
-    margin-top: 16px;
-    font-size: 34px;
-  }
-  .header-logo img {
-    width: 180px;
-    margin-top: 46px;
-  }
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
